@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Marcos Cassiani">
+    <title>Rock Paper Scissor Game</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/starter-template/">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+  </head>
+  <body>
+
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+  <header class="d-flex align-items-center pb-3 mb-2 border-bottom">
+
+	<span class="fs-4">Rock Paper Scissor Game Stats</span>
+  </header>
+
+  <main>
+    <p class="fs-8 col-md-12 mt-3 mb-5">Here you can see the stats of all rounds played.</p>
+
+      <div class="row g-5 mt-3">
+          <div class="mb-1 mt-2 text-start" style="width: 50%; padding-right: 0;">
+              <h3 sclass="pb-2 pt-3border-bottom">Total Rounds played <span id="total-rounds-played" class="badge bg-primary rounded-pill">0</span></h3>
+          </div>
+      </div>
+
+      <div class="row g-4 py-1 row-cols-1 row-cols-lg-3 mt-0 mb-5">
+          <div class="feature col">
+              <div class="feature-icon">
+                  <img src="assets/resources/lisa-wins.jpg" height="250"/>
+              </div>
+              <h3 class="text-center">Rounds won by Lisa</h3>
+              <h1 class="text-center" id="total-rounds-p1">0</h1>
+              <h5 class="text-center" id="total-rounds-p1-percentage">0</h5>
+          </div>
+          <div class="feature col">
+              <div class="feature-icon">
+                  <img src="assets/resources/bart_wins.jpg" height="250"/>
+              </div>
+              <h3 class="text-center">Rounds won by Bart</h3>
+              <h1 class="text-center" id="total-rounds-p2">0</h1>
+              <h5 class="text-center" id="total-rounds-p2-percentage">0</h5>
+          </div>
+          <div class="feature col">
+              <div class="feature-icon">
+                  <img src="assets/resources/draw.jpg" height="250"/>
+              </div>
+              <h3 class="text-center">Tied rounds</h3>
+              <h1 class="text-center" id="total-rounds-draw">0</h1>
+              <h5 class="text-center" id="total-rounds-draw-percentage">0</h5>
+          </div>
+      </div>
+      <div class="mb-5 mt-3 text-end">
+          <a href=index.html#" class="btn btn-success btn-lg px-4">Back to new game</a>
+      </div>
+
+  </main>
+  <footer class="pt-2 my-5 text-muted border-top">
+    Created by Marcos Cassiani
+  </footer>
+</div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/dist/js/rock-paper-scissor-stats.js"></script>
+	<script src="assets/dist/js/rock-paper-scissor-global.js"></script>
+
+  </body>
+</html>
